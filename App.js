@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { Button, Image, Pressable, StyleSheet, Text, View } from 'react-native';
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 export default function App() {
   const img = require('./assets/icon.png');
