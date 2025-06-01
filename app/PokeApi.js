@@ -13,7 +13,6 @@ export default function PokeApiComponent ({navigation}) {
   fetchData();
 }, []);
 
-  console.log(pokeData)
   return(
     <View style={style.container}>
       <Text>PokeApi</Text> 

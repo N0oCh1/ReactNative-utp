@@ -3,18 +3,18 @@ import { Text, View, StyleSheet, Pressable } from "react-native";
 
 export default function CalculadoraComponent() {
   const [total, setTotal] = useState([]);
-  const [texto, setTexto] = useState([""]);
+  const [texto, setTexto] = useState('');
   const [equalPresed, press] = useState(false);
 
 
   function handlePress (digit) {
     const operadores = [" + ", " - ", " x ", " / "];
-    if ((texto === "" || texto.length === 0) && operadores.includes(digit)) {
+    if (texto === ""  && operadores.includes(digit)) {
       return;
     }
     if(equalPresed){
       press(false)
-      setTexto()
+      setTexto('')
     }
     setTexto(prev=> prev + digit)
   }
