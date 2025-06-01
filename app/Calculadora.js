@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Text, View, StyleSheet, Pressable } from "react-native";
 
 export default function CalculadoraComponent() {
-  const [total, setTotal] = useState();
+  const [total, setTotal] = useState([]);
   const [texto, setTexto] = useState([""]);
   const [equalPresed, press] = useState(false);
 

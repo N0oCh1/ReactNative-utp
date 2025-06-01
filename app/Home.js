@@ -30,7 +30,7 @@ export default function HomeComponent({navigation}) {
           source={{uri: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png"}}/>
       <View style={style.btn_navigate}>
         <Button title='Calculadora' onPress={()=>{navigation.navigate("Calculadora")}}/>
-        <Button title='PokeApi'/>
+        <Button title='PokeApi' onPress={()=>{navigation.navigate("PokeApi")}}/>
       </View>
     </View>
   )
